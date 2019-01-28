@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="resume" content="width=device-width, initial-scale=1">
+        <title>JavaScript Basics</title>
+        <meta name = "JS - Conditionals, Functions, Variables, Parameters, Arrays, Associative Arrays" content="CIT261 portfolio for Jonathan Carlson.">
+        <link rel="../stylesheet" href="../styles/normalize.css">
+        <link id="styles" rel="stylesheet" href="../styles/proficiency.css">
+    </head>
+
+    <body>
+        
+        <h1>
+           JavaScript object creation, Functions, Inheritance, Properties, Methods, & Instantiation
+        </h1>  
+        
+        <h3 style="margin: auto; max-width: 800px; padding: 15px;">Enter the information of a student in the input boxes below, then click on one of the buttons. Each button will create a differently named object with that student's information. Each additional click will overwrite the object's properties with the information in the input boxes.</h3>
+        
+        <h2>Student Name:</h2>
+        <br>
+        <input type="text" id="Name">
+        <br><br>
+        <h2>GPA:</h2>
+        <br>
+        <input type="text" id="GPA">
+        <br><br>
+        <h2>Major:</h2>
+        <br>
+        <input type="text" id="Major">
+        <br><br>
+        <h2>Location:</h2>
+        <br>
+        <input type="text" id="Loc">
+        <br>
+        
+        <div class="row">
+            <div class="column">
+                <button type="button" onclick=createStudent(1)>Create & Display Object 1</button>
+                <h2>Student Name:</h2>
+                <h3 id="nameone">?</h3>
+                <h2>Student GPA:</h2>
+                <h3 id ="gpaone">?</h3>
+                <h2>Student Major:</h2>
+                <h3 id ="majorone">?</h3>
+                <h2>Student Location:</h2>
+                <h3 id ="locone">?</h3>
+                <h2>Student Gender:</h2>
+                <h3 id ="genone">?</h3>
+                <h2>Student Age:</h2>
+                <h3 id ="ageone">?</h3>
+            </div>
+            
+            <div class="column">
+                <button type="button" onclick=createStudent(2)>Create & Display Object 1</button>
+                <h2>Student Name:</h2>
+                <h3 id="nametwo">?</h3>
+                <h2>Student GPA:</h2>
+                <h3 id ="gpatwo">?</h3>
+                <h2>Student Major:</h2>
+                <h3 id ="majortwo">?</h3>
+                <h2>Student Location:</h2>
+                <h3 id ="loctwo">?</h3>
+                <h2>Student Gender:</h2>
+                <h3 id ="gentwo">?</h3>
+                <h2>Student Age:</h2>
+                <h3 id ="agetwo">?</h3>
+            </div>
+            
+            <div class="column">
+                <button type="button" onclick=createStudent(3)>Create & Display Object 1</button>
+                <h2>Student Name:</h2>
+                <h3 id="namethree">?</h3>
+                <h2>Student GPA:</h2>
+                <h3 id ="gpathree">?</h3>
+                <h2>Student Major:</h2>
+                <h3 id ="majorthree">?</h3>
+                <h2>Student Location:</h2>
+                <h3 id ="locthree">?</h3>
+                <h2>Student Gender:</h2>
+                <h3 id ="genthree">?</h3>
+                <h2>Student Age:</h2>
+                <h3 id ="agethree">?</h3>
+            </div>
+        </div>
+
+        <h3 style="margin: auto; max-width:900px; padding: 15px;">Now 
+        that your student objects are created, we will introduce another 
+        function that inherits the objects we just used and adds two 
+        additional properties- age and gender. Though it is a bit
+        difficult to tell from this example, the new object does in fact
+        contain all the properties of the previous object because of the
+        inheritence. You can tell this by looking at the source code and
+        testing by uncommenting the document.write() function, or by simply
+        clicking on the lower buttons before the initial object is created
+        to see that they don't work until they have something to inerit from.</h3>
+        
+        <h2>Student's Gender:</h2>
+        <br>
+        <input type="text" id="Gen">
+        <br><br>
+        <h2>Student's Age:</h2>
+        <br>
+        <input type="text" id="Age">
+        <br><br>
+        
+        <div class="row">
+            <div class="column">
+                <button type="button" onclick=completeStudent(1)>Update Object 1</button>\
+            </div>
+                
+            <div class="column">
+                <button type="button" onclick=completeStudent(2)>Update Object 2</button>
+            </div>
+                                
+            <div class="column">
+                <button type="button" onclick=completeStudent(3)>Update Object 3</button>
+            </div>
+        </div>
+        
+        <script src="../script/jsobjects.js"></script><br><br><br>
+    </body>
+
+    <footer>            
+        <p>&copy; 2019 &#9670; Jonathan Carlson &#9670; Huntsville Alabama &#9670; <a href="">Car99020@BYUI.edu</a></p>
+    </footer>
+    
+
+</html>
